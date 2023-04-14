@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="txt1">
+    <input type="number" id="txt2">
+
+    <button onclick="tinhTong()">+</button>
+    <button onclick="tinhHieu()">-</button>
+
+    <h1 id="kq">RS=</h1>
+    
+    <script>
+        function tinhTong(){
+            let st2 = +document.getElementById('txt2').value ;
+            let st1 = +document.getElementById('txt1').value ;
+            document.getElementById('kq').innerHTML='Tổng là :' + (st1+st2);
+             }
+        
+        function tinhHieu(){
+            let st2 = +document.getElementById('txt2').value ;
+            let st1 = +document.getElementById('txt1').value ;
+            document.getElementById('kq').innerHTML='Hiệu là :' + (st1-st2);
+
+        }
+    
+       
+    </script>
+</body>
+</html>

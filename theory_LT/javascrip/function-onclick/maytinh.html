@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tb.css">
+</head>
+<body>
+    <!-- 
+        1.dựng giao diện bằng table
+        2.tạo các nút bấm 'button + oclick' để thực hiện chức năng của js
+        3.thực hiện chức năng các nút
+    -->
+    <table border="1"> 
+        <tr>
+            <td colspan="4">
+                <input type="text" id="src">
+            </td>
+        </tr>
+        <tr>
+            <td><button onclick="nhap()">(</button></td>
+            <td><button onclick="nhap()">)</button></td>
+            <td><button onclick="nhap()">%</button></td>
+            <td><button onclick="nhap()">AC</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="nhap(1)">1</button></td>
+            <td><button onclick="nhap(2)">2</button></td>
+            <td><button onclick="nhap(3)">3</button></td>
+            <td><button onclick="nhap('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="nhap(4)">4</button></td>
+            <td><button onclick="nhap(5)">5</button></td>
+            <td><button onclick="nhap(6)">6</button></td>
+            <td><button onclick="nhap('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="nhap(7)">7</button></td>
+            <td><button onclick="nhap(8)">8</button></td>
+            <td><button onclick="nhap(9)">9</button></td>
+            <td><button onclick="nhap('*')">x</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="nhap(0)">0</button></td>
+            <td><button onclick="nhap('.')">.</button></td>
+            <td><button onclick="tinh()">=</button></td> 
+            <!-- bấm = là gọi ra lệnh 'function tinh' 
+            khi đó câu lệnh trong function sẽ được thực hiện -->
+            <td><button onclick="nhap('/')">/</button></td>
+            <!-- nhập số tương tự sẽ gọi ra 'function nhập' -->
+        </tr>
+    </div>
+
+    </table>
+    <script>
+        // x += a => x = x+a
+        function nhap(kt){
+            document.getElementById('src').value +=kt;
+        }
+        function tinh (){
+            document.getElementById('src').value = eval (document.getElementById('src').value);
+        }
+        
+    </script>
+</body>
+</html>

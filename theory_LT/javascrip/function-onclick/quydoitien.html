@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <!-- dựng dao diện bằng table
+    1. tạo tiêu đề th trong table
+    2. tạo ô input nhập 
+    3. dùng <select> <opction> để tạo ô chọn
+    4. tạo nút bấm <button onclick="qd()">Convert</button> , có thuộc tính onclick để sử dụng chức năng quy đổi
+    5. tạo thẻ <scrip>
+        let : khai báo các bước thực hiện của bài => bấm convert ctr chạy => nhập => chọn => chọn 
+        if : điều kiện của đề bài => in ra kết quả
+        in ra kết quả trên thẻ <h1>
+
+
+-->
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>Tocurrency</th>
+        </tr>
+        <tr>
+            <td><input type="number"id="nhap"></td>
+            <td>
+                <select id="chon1">
+                    <option value="VND">VietNam</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td>
+                <select id="chon2">
+                    <option value="USD">USD</option>
+                    <option value="VND">VietNam</option>
+                </select>
+            </td>
+            <td><button onclick="qd()">Convert</button></td>
+    </table>
+    <h1 id="Result">Result:</h1>
+
+    <script>
+
+        function qd(){
+            let a = document.getElementById('nhap').value;
+            // khai báo a = , gán a=....giá trị(value) của bước nhập
+            let b = document.getElementById('chon1').value;
+            let c = document.getElementById('chon2').value;
+
+            if (b==c) // điều kiện
+                {kq ="Result :" + (a)}
+
+            if (b=='VND'&&c=='USD') 
+                {kq ="Result :" + (a/23400)}
+                
+
+            if (a=='USD'&&b=='VND')
+                { kq ="Result :" + (a*23400)}
+               
+
+            document.getElementById("Result").innerHTML=kq ;
+            
+
+
+        }
+    </script>
+   
+
+</body>
+</html>

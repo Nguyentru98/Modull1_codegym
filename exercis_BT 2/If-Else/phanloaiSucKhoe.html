@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <html>
+        <h1>Tính chỉ số cân nặng</h1>
+        Nhập cân nặng:(kg) <input type="number" id="kg"> <br> <br>
+        nhập chiều cao :(m) <input type="number" id="m"> <br> <br>
+        <button onclick="bmi()">kiểm tra</button>
+        <h3 id="bmi">chi so BMI :</h3>
+    </html>
+
+   <script>
+    function bmi(){
+        let a= +document.getElementById('kg').value ;
+        let b= +document.getElementById('m').value ;
+        let bmi= a/(Math.pow(b, 2) ) 
+            if(bmi<18.5){
+                alert('gầy')
+            }
+        document.getElementById('bmi').innerHTML = 'Chỉ số BMI của bạn :' + bmi 
+    }
+   </script>
+    
+</body>
+</html>

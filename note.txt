@@ -1,0 +1,44 @@
+
+KIỂU DỮ LIỆU TRONG JS :
+
+* kiểu dl nguyên thủy:
+    1-number : số , ko đặt trong dấu ngoặc
+    2-string : dl chuỗi đặt trong dấu ngoặc đơn-kép
+    3-boolean : là dl 'true or false'
+    4-undefined : dl không xác định , là ko gán giá trị cho biến
+    5-null : là dl không có gì
+
+* kiểu dữ liệu phước tạp:
+    1. function : gọi tên function để chạy đc đoạn code trong nó 
+    2. object
+
+HÀM :
+1.  function + tên do mình tự đặt(thamSo) {
+        alert('helo') // 1 khối lệnh trong hàm
+    }
+
+        tên hàm + (); // gọi tên hàm để hàm thực hiện lệnh
+
+2. Tham số trong hàm :
+
+
+VÒNG LẶP :
+ for(1 ; 2 ;4){
+    3;
+ }
+ // 1,3,4 viết gì cũng được , ko cũng đc
+    2 - điều kiện LẶP
+    1- khời tạo biến
+    3- khối lện cần LẶP
+    4- tăng biến đếm
+//
+   1 
+wile(2){
+     3
+     4
+}
+
+
+   
+    
+        
