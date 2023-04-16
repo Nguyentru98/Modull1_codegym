@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Onchange Example</title>
+</head>
+<body>
+	<label for="myInput">Enter your name:</label>
+	<input type="text" id="myInput" onchange="myFunction()">
+	
+	<script>
+		function myFunction() {
+			var input = document.getElementById("myInput");
+			alert("Hello " + input.value + "!");
+		}
+	</script>
+    <!-- 
+    -gán thuộc tính onchange vào ô input
+        -khi nhập tên vào ô input => enter
+            -đoạn mã trong scrip sẽ được gọi và thực thi
+                -alert(hiển thị) 'hello + giá trị trong ô input + !'
+     -->
+</body>
+</html>

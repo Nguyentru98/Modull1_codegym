@@ -10,11 +10,14 @@
     <table>
         <tr>
             <td colspan="2"><h1>Đăng ký học viên</h1></td>
+            <!-- ô có thuộc tính colspan="2" nên ô này sẽ bằng 2 ô bình thường -->
         </tr>
 
         <tr>
             <td>họ và tên</td>
             <td><input type="text" onchange="myfunction()"></td> 
+            <!-- onchange thêm vào thẻ để khi nhập tên xong
+                 onchange sẽ gọi đoạn mã trong function ra để thực hiện 1 chức năng của function -->
         </tr>
 
         <tr>    
@@ -27,12 +30,17 @@
             <td>
                 <input type="radio" name="A"> Nam
                 <input type="radio" name="A"> Nữ
+                <!-- tạo ô chọn cho người dùng tùy chọn 
+                      là nam hay nữ , chọn nam thì radio sẽ hủy nữ
+                -->
             </td>
         </tr>
 
 
         <tr>
             <td valign="top">Địa chỉ</td>
+            <!-- valign là thuộc tính căn chỉnh dọc cho nội dung của thẻ cha
+            giá trị "top" là vị trí phía trên theo phương x-->
             <td><textarea name="text" cols="25" rows="5"></textarea></td>
         </tr>
 
@@ -59,7 +67,12 @@
 
 
     </table>
-    <script src="index.js"></script>
+    <script>
+        function myfunction() {
+            alert('hello' + input.value +'!')
+        }
+
+    </script>
 
 </body>
 </html>
