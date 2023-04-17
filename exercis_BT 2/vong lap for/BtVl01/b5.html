@@ -7,19 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Hiển thị ra 20 số trong dãy fibonacci đầu tiên. -->
+    <!-- Tính tổng của 20 số đầu tiên trong dãy fibonacci. -->
     <script>
-        let a =1
-        let b =1
-        document.write(a+'<br>')
-        document.write(b+'<br>')
+        let a = 1
+        let b = 1
+        let sum = a+b 
+        // document.write(a+'<br>')
+        // document.write(b+'<br>')
         for (let dem =2 ;dem <= 20 ; dem ++ ) {
             let c = a+b;
             a=b;
             b=c;
-            document.write(c+'<br>')
-            
+        //  document.write(c+'<br>')
+            sum+=c
         }
+        document.write(sum)
 
     </script>
 </body>

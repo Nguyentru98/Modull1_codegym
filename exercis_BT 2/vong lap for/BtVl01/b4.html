@@ -7,17 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Hiển thị ra 20 số trong dãy fibonacci đầu tiên. -->
+    <!--  Tìm số đầu tiên trong dãy fibonacci chia hết cho 5. -->
     <script>
-        let a =1
-        let b =1
-        document.write(a+'<br>')
-        document.write(b+'<br>')
+        let a = 1
+        let b = 1
+        // document.write(a+'<br>')
+        // document.write(b+'<br>')
         for (let dem =2 ;dem <= 20 ; dem ++ ) {
             let c = a+b;
             a=b;
             b=c;
-            document.write(c+'<br>')
+            if(c%5===0){
+                document.write(c)
+                break;
+            }
+
             
         }
 

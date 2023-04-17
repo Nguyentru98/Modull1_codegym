@@ -50,4 +50,4 @@ MẢNG :
     console,log(name.length) // đo độ dài của mảng 
 
     console,log(name[1]) // ouput :hao , lấy ra phần tử trong mảng
-        
+    
