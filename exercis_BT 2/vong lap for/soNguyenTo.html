@@ -8,17 +8,15 @@
 </head>
 <body>
     <script>
-        let diem = parseInt(prompt("Enter a year"));
-        if (diem>5) {
-            alert("hoc sinh dot")
-        }else if (diem<8){
-           alert("hoc sinh kha")
-        }else if (diem>=8)
-            alert("hoc sinh gioi")
-
+        let so = +prompt('nhap so')
+        let ktsnt = 'la so nt'
+        for (let i=2 ;i<=so - 1; i++ ){
+            if(so % i === 0){
+                ktrsnt ='ko phai so nguyen to';
+                break;
+            }
+        }
+            alert(ktsnt)
     </script>
-   
-
-        
 </body>
 </html>

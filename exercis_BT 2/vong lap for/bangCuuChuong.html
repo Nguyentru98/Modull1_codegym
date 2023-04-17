@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<h1>Bảng cửu chương</h1>
+<script>
+    let sout, i, j; // khai báo biến 
+    sout = "<table border='1' width='300' cellspacing='0' cellpadding='15'>"; // tạo bảng
+
+    for (i = 1; i <= 10; i++) { // đk tạo ra 10 hàng bắt đầu từ 1 , tiến 1 sau mỗi vòng lặp
+        sout = sout + "<tr>"; // in ra bảng + hàng
+        for (j = 1; j <= 10; j++) { // j là ô trong 1 hàng , tạo ra 10 ô/hàng
+            sout = sout + "<td>" + j + "*" + i + "=" + i * j + "</td>"; //
+        }
+        sout = sout + "</tr>";
+        // j = 1;
+    }
+    sout = sout + "</table>";
+    document.write(sout);
+    console.log(sout)
+</script>
+</body>
+
+</html>

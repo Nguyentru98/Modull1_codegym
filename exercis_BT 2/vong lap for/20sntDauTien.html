@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        tìm ra 20 số nguyên tố đầu tiên
+     -->
+    <script>
+        let dem = 1;
+        for(let x=2 ; x<1000; x++ ) { // chạy x từ 2==>1000
+            let ktsnt ='la so nt';
+            for(let i=2 ;i<x ;i++){ // kiểm tra x xem có phải số nguyên tố ko
+                if(x%i === 0){ // nếu x chia hết cho i thì x không phải số nguyên tố
+                    ktsnt = 'ko la so nt';
+                    break;
+                }
+
+            }
+        
+            if (ktsnt ==='la so nt') { //nếu x là số nt thì in ra và tăng đếm lên 1
+                document.write(x + '<br>') //in
+                dem++; // tăng đếm
+            }
+            if(dem ===20){ // khi đủ 20 số thì dừng
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

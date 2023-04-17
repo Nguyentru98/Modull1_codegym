@@ -39,6 +39,15 @@ wile(2){
 }
 
 
-   
+MẢNG :
+    Let name = [
+        'tru',      //output 0: tru
+        'hao',      //output 1: hao
+        'giang',    //output 0: giang
+    ] ; //khai báo MẢNG , trong mảng có thể nhận đc nhiều kiểu dữ liệu phần tử
+    console.log(name)
     
+    console,log(name.length) // đo độ dài của mảng 
+
+    console,log(name[1]) // ouput :hao , lấy ra phần tử trong mảng
         
