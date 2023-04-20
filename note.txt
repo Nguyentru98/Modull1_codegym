@@ -51,3 +51,7 @@ MẢNG :
 
     console,log(name[1]) // ouput :hao , lấy ra phần tử trong mảng
     
+*document.write('') : hiển thị , viết ra ngoài màn hình
+*let a= prompt('') : nhập value của biến 
+
+muốn tìm ẩn số nào => khai báo ẩn số đó 'let+name= ẩn số' , đưa vào điều kiện để tính

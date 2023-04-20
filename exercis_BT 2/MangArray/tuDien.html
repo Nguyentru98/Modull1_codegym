@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <html>
+        <p>Nhập từ:</p>
+        <input type="text" id="nhap">
+        <button onclick="dich()">Dịch</button>
+        <br>
+        <p>dich:</p>
+        <p id="hien"></p>
+
+
+    </html>
+<p></p>
+    <script>
+        function dich(){
+            let el=['hello','my','name','is','tru'];
+            let vn=['xin chao','của tôi','tên','là','trụ'];
+            let nhap=document.getElementById('nhap').value
+             for(let i=0; i<=el.length; i++){
+                if(el[i] == nhap) {
+                   document.getElementById('hien').innerHTML = vn[i];
+                } 
+
+             }
+
+        }
+    
+   
+
+
+
+
+    </script>
+</body>
+</html>
